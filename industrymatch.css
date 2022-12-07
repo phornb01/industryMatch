@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration:none;
+}
+
+body{
+  font-family:Poppins;
+}
+
+.navbar{
+  text-align:center;
+  padding:1vw;
+  position:absolute;
+  width:100vw;
+  max-width:100%;
+  z-index:2;
+  //border: solid red;
+}
+
+.menu{
+  list-style-type:none;
+  height:3vw;
+  //border:solid blue;
+  margin-left:0;
+}
+
+li a{
+  text-decoration:none;
+  color:white;
+}
+
+li{
+  display:inline-block;
+  //border: solid purple;
+}
+
+.logoLi{
+  width:34vw;
+  //float:left;
+  text-align:left;
+}
+
+.joinNowLi{
+  //float:right;
+  //margin-left:30vw;
+  text-align:right;
+  width:34vw;
+}
+
+.link{
+  float:center;
+  width:8vw;
+  padding:0.3vw;
+  font-size:1.25vw;
+}
+
+#aboutA:hover{
+  text-decoration:underline;
+}
+
+#contactA:hover{
+  text-decoration:underline;
+}
+
+#quizA:hover{
+  text-decoration:underline;
+}
+
+.logo{
+  font-size:2vw;
+}
+
+.joinNowButton{
+  background-color:black;
+  border: none;
+  color:white;
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 1.25vw;
+}
+
+.joinNowButton:hover{
+  font-weight:bold;
+}
