@@ -6,50 +6,575 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="industrymatch.css" rel='stylesheet'>
     <title>Industry Match</title>
-    <style>
-        li a{
-            color: black;
-        }
-        
-        .heading {
-            margin-top: 300px;
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .heading img {
-         margin-left: 400px;
-         max-width: 150px;
-         max-height: 150px;
-        }
-        
-        
-    </style>
+
+  <style>
+
+    li a{
+      color:black;
+    }
+
+    table{
+      margin:auto;
+    }
+
+    .navbar{
+      position:static;
+    }
+
+    .careerPicTd{
+      width:40vw;
+    }
+
+    .careerTd{
+      font-size:5vw;
+      width:40vw;
+    }
+
+    .blockOne{
+      text-align:center;
+    }
+
+  .startTestB{
+  background-color:black;
+  border: none;
+  color:white;
+  padding: 2vw 3vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.startTestB:hover{
+  font-weight:bold;
+}
+
+.questionDiv{
+  display:none;
+  font-size:1.75vw;
+  text-align:center;
+}
+
+#submitAll{
+  display:none;
+  background-color:black;
+  border: none;
+  color:white;
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#submitAll:hover{
+  font-weight:bold;
+}
+
+.q1Img{
+  background-image:url("Forest.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q2Img{
+  background-image:url("Path.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q3Img{
+  background-image:url("Night.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q4Img{
+  background-image:url("Scared.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q5Img{
+  background-image:url("Think.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q6Img{
+  background-image:url("Fall.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q7Img{
+  background-image:url("abandoned.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.q8Img{
+  background-image:url("Found.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding:175px;
+  width:50vw;
+  margin:auto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+.questionH{
+  color:white;
+  background-color:black;
+  margin-bottom:1vw;
+}
+
+.nextQuestion{
+  background-color:black;
+  border: none;
+  color:white;
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.nextQuestion:hover{
+  font-weight:bold;
+}
+
+.answersDiv{
+  width:50vw;
+  text-align:left;
+  margin-left:25vw;
+  margin-bottom:1vw;
+}
+
+  </style>
 </head>
 <body>
-  <header>
+
   <div class="navbar">
           <ul class="menu">
-              <li class="logoLi"><a href="index.html" class="logo">INDUSTRY MATCH</a>
+              <li class="logoLi"><a href="Default.html" class="logo">INDUSTRY MATCH</a>
               <li class="link"><a id="aboutA" href="About.html">About</a></li>
               <li class="link"><a id="contactA" href="Contact.html">Contact</a></li>
               <li class="link"><a id="quizA" href="Quiz.html">Quiz</a></li>
               <li class="joinNowLi"><button class="joinNowButton">Join Now</button></li>
           </ul>
   </div>
-  </header>
-    
-  <div class="heading">
-     
-    <img src="notebook.png">
-  
-    <div class="text1">
-      Take our diagnostic test below!
-    </div>
-      
+
+  <div id="careerDiv">
+
+  <table>
+
+    <tr>
+      <td class="careerPicTd"><img src="quizGuy.jpg"></td>
+      <td class="careerTd">Our Career Aptitude Test</td>
+    </tr>
+
+  </table>
+
+    <div class="blockOne">
+
+      <button class="startTestB" onclick="startingTest()">Start Test</button>
+
   </div>
 
+  </div>
+
+<form method="post" action="results.php">
+
+<div class="questionDiv" id="question1">
+
+<div class="questionH"> Question 1 </div>
+
+You and your friend Ben suddenly wake up in the woods and have to find your way home. 
+What do you do first?
+
+<br>
+
+<div class="q1Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="analytical" name="q1R" value="analytical"> 
+<label for="analytical">Look around at your surroundings</label>
+<br>
+
+<input type="radio" id="communication" name="q1R" value="communication"> 
+<label for="communication">Talk things through with Ben</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ2()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question2">
+
+<div class="questionH"> Question 2 </div>
+
+You and Ben keep moving and encounter a fork in the path. Ben is looking at the ground
+to find tracks of animals, which is taking a while. How do you decide which path to 
+take?
+
+<br>
+
+<div class="q2Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="initiative" name="q2R" value="initiative"> 
+<label for="initiative">Make the decision on which path to go on so you can 
+  keep moving</label>
+<br>
+
+<input type="radio" id="detail" name="q2R" value="detail"> 
+<label for="detail">Wait for Ben and help him look at tracks</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ3()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question3">
+
+<div class="questionH"> Question 3 </div>
+
+	Darkness is creeping in. It is your first night. You and Ben have to figure out 
+  a way to survive. Ben has started trying to build a shelter, but is struggling. 
+  What do you do?
+
+<br>
+
+<div class="q3Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="teamwork" name="q3R" value="teamwork"> 
+<label for="teamwork">Build shelter with Ben</label>
+<br>
+
+<input type="radio" id="organization" name="q3R" value="organization"> 
+<label for="organization">Ration your resources</label>
+<br>
+
+<input type="radio" id="responsibility" name="q3R" value="responsibility"> 
+<label for="responsibility">Look for materials for a fire</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ4()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question4">
+
+<div class="questionH"> Question 4 </div>
+
+	Ben starts freaking out because he does not think there is a way out of the forest.
+
+<br>
+
+<div class="q4Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="compassion" name="q4R" value="compassion"> 
+<label for="compassion">Comfort Ben and empathize with him </label>
+<br>
+
+<input type="radio" id="conflict management" name="q4R" value="conflict management"> 
+<label for="conflict management">Create a plan to make Ben more secure that there 
+  is hope</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ5()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question5">
+
+<div class="questionH"> Question 5 </div>
+
+You start to doubt you will be able to get out of the woods. You decide you need 
+to figure out a way to alert people where you are.
+<br>
+
+<div class="q5Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="creativity" name="q5R" value="creativity"> 
+<label for="creativity">Create a creative flare system and set it off</label>
+<br>
+
+<input type="radio" id="design" name="q5R" value="design"> 
+<label for="design">Design a big SOS sign on the ground</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ6()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question6">
+
+<div class="questionH"> Question 6 </div>
+
+You made it through the night. It is the morning and you have to get moving. 
+You encounter a steep hill. As much as you watch your footing, you slip and fall down 
+a slope and scratch your arm and are worried it might become infected. What do you do?
+<br>
+
+<div class="q6Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="labor" name="q6R" value="labor"> 
+<label for="labor">Keep moving</label>
+<br>
+
+<input type="radio" id="STEM" name="q6R" value="STEM"> 
+<label for="STEM">Create ointment from leaves</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ7()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question7">
+
+<div class="questionH"> Question 7 </div>
+
+You see an abandoned building in the distance. You venture inside and find an 
+assortment of old office materials including an old computer. You go to see if 
+it is functioning and it is. How do you use it to find your way home?
+<br>
+
+<div class="q7Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="java" name="q7R" value="java"> 
+<label for="java">Access the internet and figure out where you are on maps. 
+  However, you need to know how to code to get around encryption</label>
+<br>
+
+<input type="radio" id="microsoft office" name="q7R" value="microsoft office"> 
+<label for="microsoft office">Access a spreadsheet with the directions out of the woods. 
+  In order to do this, you need to know Microsoft Office</label>
+<br>
+
+<input type="radio" id="mathematics" name="q7R" value="mathematics"> 
+<label for="mathematics">Do the mathematical calculations necessary in order to 
+  find your location and leave the woods</label>
+<br>
+
+<input type="radio" id="multitasking" name="q7R" value="multitasking"> 
+<label for="multitasking">Find other resources around the abandoned office to find 
+  a way to help you determine your location</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toQ8()">Next Question</button>
+
+</div>
+
+<div class="questionDiv" id="question8">
+
+<div class="questionH"> Question 8 </div>
+
+After using your expertise, you and Ben left the abandoned office and found your way 
+out of the woods. You are greeted by a group of people, including your family and a 
+group of concerned people who saw your sign.
+<br>
+
+<div class="q8Img">
+</div>
+
+<div class="answersDiv">
+
+<input type="radio" id="public speaking" name="q8R" value="public speaking"> 
+<label for="public speaking">Greet them and speak to all of them as a group thanking 
+  them for their support </label>
+<br>
+
+<input type="radio" id="compassion2" name="q8R" value="compassion"> 
+<label for="compassion2">Go to your family</label>
+<br>
+
+</div>
+
+<button type="button" class="nextQuestion" onclick="toEnd()">Next Question</button>
+
+</div>
+
+<input type="submit" id="submitAll" name="submitAll" value="Done">
+
+</form>
+
+
 </body>
+
+<script>
+
+
+function startingTest(){
+
+console.log("starting test");
+
+var careerDivElem = document.getElementById("careerDiv");
+careerDivElem.style.display = "none";
+
+var question1Elem = document.getElementById("question1");
+question1Elem.style.display = "block";
+
+}
+
+function toQ2(){
+  console.log("next question");
+
+  var question1Elem = document.getElementById("question1");
+  question1Elem.style.display = "none";
+
+  var question2Elem = document.getElementById("question2");
+  question2Elem.style.display = "block";
+
+}
+
+function toQ3(){
+  console.log("next question");
+
+  var question2Elem = document.getElementById("question2");
+  question2Elem.style.display = "none";
+
+  var question3Elem = document.getElementById("question3");
+  question3Elem.style.display = "block";
+
+}
+
+function toQ4(){
+  console.log("next question");
+
+  var question3Elem = document.getElementById("question3");
+  question3Elem.style.display = "none";
+
+  var question4Elem = document.getElementById("question4");
+  question4Elem.style.display = "block";
+
+}
+
+function toQ5(){
+
+  var question4Elem = document.getElementById("question4");
+  question4Elem.style.display = "none";
+
+  var question5Elem = document.getElementById("question5");
+  question5Elem.style.display = "block";
+
+}
+
+function toQ6(){
+
+  var question5Elem = document.getElementById("question5");
+  question5Elem.style.display = "none";
+
+  var question6Elem = document.getElementById("question6");
+  question6Elem.style.display = "block";
+
+}
+
+function toQ7(){
+
+  var question6Elem = document.getElementById("question6");
+  question6Elem.style.display = "none";
+
+  var question7Elem = document.getElementById("question7");
+  question7Elem.style.display = "block";
+
+}
+
+function toQ8(){
+
+  var question7Elem = document.getElementById("question7");
+  question7Elem.style.display = "none";
+
+  var question8Elem = document.getElementById("question8");
+  question8Elem.style.display = "block";
+
+}
+
+function toEnd(){
+
+  var question8Elem = document.getElementById("question8");
+  question8Elem.style.display = "none";
+
+  var submitBElem = document.getElementById("submitAll");
+  submitBElem.style.display = "block";
+
+}
+
+
+/*
+
+<button type="button" class="nextQuestion" onclick="toQ2()">Next Question</button>
+
+</div>
+
+<input type="submit" id="submitAll" name="submitAll" value="Done">
+
+*/
+
+</script>
 
 </html>
