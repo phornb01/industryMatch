@@ -6,25 +6,140 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="industrymatch.css" rel='stylesheet'>
     <title>Industry Match</title>
+    <style>
+        li a{
+            color:#000000;
+        }
+        body {
+            background-color: #d5d5be;
+        }
+        .link {
+            font-size: 20px;
+        }
+        #body_text {
+            font-size: 65px;
+            margin-top: 160px;
+            float: left;
+            margin-right: 90px;
+            text-align: left;
+            margin-left: 50px;
+        }
+        .flex-container {
+            display: flex;
+        }
+        #woman {
+            margin-top: 100px;
+            margin-right: 110px;
+        }
+        #whatWeDo {
+            margin-top: 100px;
+            background-color: #bf3722;
+            color: #ffffff;
+        }
+        #top-text {
+            font-size: 55px;
+            padding-top: 80px;
+        }
+        #bottom-text {
+            padding-top: 30px;
+            margin-left: 400px;
+            margin-right: 400px;
+            font-size: 20px;
+        }
+        #quiz-text {
+            color: #ebca64; 
+            text-decoration: none;
+        }
+        #quiz_link {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+            padding-bottom: 90px;
+            padding-top: 30px;
+        }
+        #explore {
+            color: #ebca64; 
+            text-decoration: none;
+            padding-right: 50px;
+        }
+        #meet {
+            background-color: #ffffff;
+        }
+        .pictures {
+            border-radius: 50%;
+            width: 300px;
+        }
+        .founders {
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+            font-size: 50px;
+            margin-right: 300px;
+            margin-left: 300px;
+
+        }
+        .founder_title {
+            font-size: 25px;
+        }
+    </style>
 </head>
+
 <body>
 
   <div class="navbar">
           <ul class="menu">
-              <li class="logoLi"><a href="index.html" class="logo">INDUSTRY MATCH</a>
+              <li class="logoLi"><a href="index.html" class="logo" style='color: #000000'>INDUSTRY MATCH</a>
               <li class="link"><a id="aboutA" href="About.html">About</a></li>
               <li class="link"><a id="contactA" href="Contact.html">Contact</a></li>
               <li class="link"><a id="quizA" href="Quiz.html">Quiz</a></li>
               <li class="joinNowLi"><button class="joinNowButton">Join Now</button></li>
           </ul>
+          <div class="flex-container">
+            <div id="body_text">
+            We're passionate about helping you grow and <br />
+            <u>finding your perfect fit</u>
+            </div>
+            <div>
+                <img id="woman" src="woman.png">
+            </div>
+          </div>
+          <div id="whatWeDo">
+            <div id="top-text">
+                What we do
+            </div>
+            <div id="bottom-text">
+                Industry Match pairs you with the best job for you based on 
+                your personality and characteristics. We do this through our
+                career aptitude test which uses out in-house job-matching 
+                algorithm to analyse what personality traits make which jobs
+                best suited for you.
+            </div>
+            <div id="quiz_link">
+                <u><a href="index.html" id="explore">Explore our memberships</a></u>
+                <u ><a href="quiz.html" id="quiz-text">Take Quiz</a></u>
+            </div>
+          </div>
+          <div id="meet">
+            <div class="founders">
+                <img src="ben.jpeg" class="pictures">
+                Meet Ben <br />Co-Founder, CEO
+            </div>
+           
+            <div class="founders">
+                Meet Paula<br /> Co-Founder and Developer
+                <img src="paula.jpeg" class="pictures">
+            </div>
+            <div class="founders">
+                <img src="gayatri.jpeg" class="pictures">
+                Meet Gayatri<br /> Co-Founder and Developer
+            </div>
+            <div class="founders">
+                Meet Connor<br /> Co-Founder and Developer
+                <img src="connor.jpeg" class="pictures">
+            </div>
+          </div>
   </div>
-
-<div style="background-color:black, text-align:center;">
-
-About
-
-</div>
-
+  
 </body>
 
 </html>
